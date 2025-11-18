@@ -1,7 +1,8 @@
 {
-  "buildCommand": "npm install && npx vite build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install --include=dev",
-  "devCommand": "npm run dev",
-  "framework": null
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
